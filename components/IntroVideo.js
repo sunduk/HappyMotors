@@ -1,4 +1,25 @@
+import { useState, useEffect } from 'react';
+
 export default function IntroVideo() {
+  const STORAGE_KEY = 'siteSettings';
+
+  const [slogan, setSlogan] = useState('');
+
+  useEffect(() => {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      const json = JSON.parse(stored);
+      setSlogan(json.mainSlogan || '');
+    } else {
+      setSlogan('');
+    }
+  }, []);
+
+  // 기본값이 필요하다면
+  const mainSlogan = slogan || 'Welcome to Happy Motors';
+  const subSlogan = 'Experience the future of mobility, simplified.';
+
+  
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Video */}
@@ -16,7 +37,7 @@ export default function IntroVideo() {
       {/* Overlay Content */}
       <div className="relative z-10 flex h-full items-center justify-center text-white text-center bg-black/40">
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold mb-4">Welcome to Happy Motors</h1>
+          <h1 className="text-5xl font-bold mb-4">{mainSlogan}</h1>
           <p className="text-xl">Experience the future of mobility, simplified.</p>
         </div>
       </div>

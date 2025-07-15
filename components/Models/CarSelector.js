@@ -29,7 +29,7 @@ export default function CarSelector({carData, setSelectedCar}){
     };
 
     return (
-        <div className="flex justify-center space-x-2 py-8 mt-10 bg-gray-900">
+        <div className="flex justify-center space-x-2 py-8 bg-gray-900">
             {carData.map((car, index) => (
                 <button
                     key={index}

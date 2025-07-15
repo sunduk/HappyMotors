@@ -1,0 +1,8 @@
+.nav {
+  display: flex;
+  gap: 1rem;  /* 메뉴 간격 */
+}
+
+.adminLink {
+  margin-left: auto; /* 여기서 오른쪽으로 밀기! */
+}

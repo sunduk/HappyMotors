@@ -3,7 +3,7 @@ import Footer from './Footer'
 
 export default function Layout({ children }) {
     return (
-    <div>
+    <div style={{paddingTop:'60px'}}>
       <Navbar />
       <main>{children}</main>
       <Footer />

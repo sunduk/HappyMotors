@@ -1,0 +1,17 @@
+/* SloganForm.module.css */
+
+.formBox {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.input {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #00aeff;
+}
