@@ -1,0 +1,13 @@
+# Node
+node_modules/
+
+# Next.js build output
+.next/
+
+# Build output
+build/
+dist/
+
+# 기타
+.env
+.DS_Store

@@ -1,0 +1,105 @@
+/* vision 섹션 */
+.vision {
+  position: relative;   /* relative */
+  height: 100vh;        /* h-screen */
+  overflow: hidden;     /* overflow-hidden */
+}
+
+.visionBackground {
+  position: absolute;         /* absolute */
+  top: 0;                     /* top-0 */
+  left: 0;                    /* left-0 */
+  width: 100%;                /* w-full */
+  height: 100%;               /* h-full */
+  object-fit: cover;          /* object-cover */
+  z-index: 0;                 /* z-0 */
+  pointer-events: none;       /* pointer-events-none */
+}
+
+.visionOverlay {
+  position: relative;           /* relative */
+  z-index: 10;                  /* z-10 */
+  display: flex;                /* flex */
+  height: 100%;                 /* h-full */
+  align-items: center;          /* items-center */
+  justify-content: center;      /* justify-center */
+  color: white;                 /* text-white */
+  text-align: center;           /* text-center */
+  background-color: rgba(0, 0, 0, 0.4); /* bg-black/40 */
+}
+
+.visionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+
+/* history 섹션 */
+.historySection {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.historySection .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.historyTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.historyYear {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.historyContent h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.3rem 0;
+}
+
+.historyContent p {
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 데스크탑 버전: 연도 왼쪽, 내용 오른쪽 */
+@media (min-width: 768px) {
+  .historyItem {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .historyYear {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
+  .historyContent {
+    width: 70%;
+  }
+}
