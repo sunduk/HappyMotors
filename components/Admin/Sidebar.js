@@ -12,7 +12,7 @@ export default function AdminSidebar() {
             <nav>
                 <ul>
                     <li className={pathname === '/admin/dashboard' ? styles.active : ''}><Link href="/admin/dashboard">Dashboard</Link></li>
-                    <li className={pathname === '/admin/slogan' ? styles.active : ''}><Link href="/admin/slogan">슬로건 관리</Link></li>
+                    <li className={pathname === '/admin/main' ? styles.active : ''}><Link href="/admin/main">메인 페이지 관리</Link></li>
                     <li className={pathname === '/admin/about' ? styles.active : ''}><Link href="/admin/about">About 관리</Link></li>
                     <li className={pathname === '/admin/history' ? styles.active : ''}><Link href="/admin/history">연혁 관리</Link></li>
                 </ul>

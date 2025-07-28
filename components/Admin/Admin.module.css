@@ -1,0 +1,57 @@
+.titleBar {
+  background-color: #0070f3;  /* 원하는 색상 (파란색 예시) */
+  color: #fff;                /* 글자색 흰색 */
+  padding: 1rem 2rem;         /* 상하/좌우 여백 */
+  font-size: 1.5rem;          /* 글자 크기 */
+  font-weight: bold;          /* 글자 두께 */
+}
+
+.contentBox {
+    padding-top: 2rem;  /* 원하시는 만큼 조절하세요 */
+    padding-left: 2rem;  /* 원하시는 만큼 조절하세요 */
+    padding-bottom: 2rem;  /* 원하시는 만큼 조절하세요 */
+}
+
+.formBox {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
+.input {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #00aeff;
+  border-radius: 4px;
+}
+
+.buttonContainer {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: #0070f3; /* 브랜드 컬러로 변경 가능 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0059c1;
+}
+
+.button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}

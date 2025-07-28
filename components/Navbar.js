@@ -40,6 +40,7 @@ export default function Navbar() {
             <Link href="/models?carIndex=0" onClick={() => setIsOpen(false)}>Models</Link>
             <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link href="/event" onClick={() => setIsOpen(false)}>Event</Link>
           </div>
         </div>
 
