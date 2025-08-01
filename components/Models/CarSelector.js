@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import styles from './CarSelector.module.css';
 
 export default function CarSelector({carData, setSelectedCar}){
     const router = useRouter();
@@ -29,12 +30,12 @@ export default function CarSelector({carData, setSelectedCar}){
     };
 
     return (
-        <div className="flex justify-center space-x-2 py-8 bg-gray-900">
+        <div className={styles.buttonContainer}>
             {carData.map((car, index) => (
                 <button
                     key={index}
                     onClick={() => handleCarSelect(index)}
-                    className={`button ${selectedCarIndex == index ? 'selected' : 'deselected'}`}
+                    className={`${styles.button} ${selectedCarIndex == index ? styles.selected : styles.deselected}`}
                 >
                 {car.name}
                 </button>

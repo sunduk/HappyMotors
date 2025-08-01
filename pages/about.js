@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Vision from '../components/About/Vision'
 import History from '../components/About/History'
+import Media from '../components/About/Media'
+import AppStore from '../components/About/AppStore'
+import App from 'next/app'
 
 // SSR방식.
 // 1) next.config.js에서 output: 'export', 제거할것
@@ -33,6 +36,8 @@ export default function About({ historyItems }) {
       </Head>
       <Vision />
       <History items={historyItems}/>
+      <Media />
+      <AppStore />
     </>
   )
 }

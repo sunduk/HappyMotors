@@ -5,26 +5,27 @@ import { getAdminSettings } from './Admin/AdminStorage';
 export default function IntroVideo() {
   const STORAGE_KEY = 'siteSettings';
 
-  const [mainSlogan, setMainSlogan] = useState('');
-  const [subSlogan, setSubSlogan] = useState('');
+  const [mainSlogan, setMainSlogan] = useState('Welcome to Happy Motors!');
+  const [subSlogan, setSubSlogan] = useState('우리는 단순한 삶을 지향합니다.');
 
-  const [videoReferenceText, setVideoReferenceText] = useState('');
-  const [videoLink, setVideoLink] = useState('');
+  const [videoReferenceText, setVideoReferenceText] = useState('Kelly Lacy from Pexels');
+  const [videoLink, setVideoLink] = useState('https://www.pexels.com/video/footage-of-white-car-857263/');
 
-  useEffect(() => {
-    const stored = getAdminSettings();
-    if (stored) {
-      setMainSlogan(stored.mainSlogan || '');
-      setSubSlogan(stored.subSlogan || '');
-      setVideoReferenceText(stored.videoReferenceText || '');
-      setVideoLink(stored.videoLink || '');
-    } else {
-      setMainSlogan('');
-      setSubSlogan('');
-      setVideoReferenceText('');
-      setVideoLink('');
-    }
-  }, []);
+  // admin기능 제거.
+  // useEffect(() => {
+  //   const stored = getAdminSettings();
+  //   if (stored) {
+  //     setMainSlogan(stored.mainSlogan || '');
+  //     setSubSlogan(stored.subSlogan || '');
+  //     setVideoReferenceText(stored.videoReferenceText || '');
+  //     setVideoLink(stored.videoLink || '');
+  //   } else {
+  //     setMainSlogan('');
+  //     setSubSlogan('');
+  //     setVideoReferenceText('');
+  //     setVideoLink('');
+  //   }
+  // }, []);
 
 
   return (
